@@ -120,6 +120,10 @@ dxq() {
 	sfdx force:data:soql:query -q "$1"
 }
 
+dxc() {
+	sfdx force:apex:class:create -n "$1" -d ./force-app/main/default/classes
+}
+
 alias subl='/mnt/c/Program\ Files/Sublime\ Text\ 3/subl.exe'
 
 
