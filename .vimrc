@@ -7,13 +7,16 @@ set shiftwidth=4
 
 set smarttab
 set autoindent
+
+" Turn on relative line numbers, and make them grey
 set number
 set relativenumber
+highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
 
-set runtimepath^=~/.vim/bundle/ctrlp.vim
-
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_map = '<c-p>'
+" Uncomment if the ctrlp plugin is installed
+" set runtimepath^=~/.vim/bundle/ctrlp.vim
+" let g:ctrlp_map = '<c-p>'
+" let g:ctrlp_map = '<c-p>'
 
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.xml,scripts.js,*/node_modules/*,*/bower_components/*
 
