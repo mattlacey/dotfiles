@@ -106,7 +106,7 @@ alias gb='git branch --sort=-committerdate'
 alias start='explorer.exe'
 
 alias dxpush='sfdx force:source:push'
-alias dxopen='sfdx force:org:open'
+alias dxopen='sfdx force:org:open -r | grep -o "http.*" | tee >(pbcopy)'
 alias dxpull='sfdx force:source:pull'
 alias dxlist='sfdx force:org:list'
 alias dxe='sfdx force:apex:execute -f ./code'
@@ -164,10 +164,6 @@ alias 'cd..'='cd_up'                                # can not name function 'cd.
 
 fortune
 
-
-export BROWSER=~/browser.sh
-
-export DISPLAY=:0
 export XDG_RUNTIME_DIR=/tmp/tmpx
 export RUNLEVEL=3
 
